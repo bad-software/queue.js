@@ -1,0 +1,27 @@
+{
+  "name": "@bad-software/queue.js",
+  "version": "0.1.0",
+  "description": "Utilities for creating and managing queues in JavaScript",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "https://github.com/bad-software/queue.js",
+  "scripts": {
+    "lint": "eslint . --config ./.eslintrc.cjs --fix",
+    "prepublish": "yarn test",
+    "coverage": "c8 --src ./src --all ospec",
+    "test": "yarn lint && ospec"
+  },
+  "devDependencies": {
+    "@bad-software/eslint-config": "^0.3.1",
+    "eslint": "^8.51.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsdoc": "^46.8.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "ospec": "^4.2.0"
+  },
+  "packageManager": "yarn@4.0.1",
+  "dependencies": {
+    "c8": "^8.0.1"
+  }
+}
